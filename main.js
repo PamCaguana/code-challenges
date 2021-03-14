@@ -9,3 +9,8 @@ var replaceDots = function(str) {
     let sum2 = b.reduce((a,b) => a * b)
     return Math.abs(sum1-sum2)
   }
+
+  //My head is at the wrong end!
+  function fixTheMeerkat(arr) {
+    return arr.reverse()
+   }
