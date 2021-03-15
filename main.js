@@ -14,3 +14,10 @@ var replaceDots = function(str) {
   function fixTheMeerkat(arr) {
     return arr.reverse()
    }
+
+   //Get the mean of an array
+   function getAverage(marks){
+    let sum = marks.reduce((a,b) => a + b,0)
+    let average = sum/marks.length
+    return Math.floor(average)
+  }
