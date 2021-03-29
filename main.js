@@ -27,3 +27,12 @@ var replaceDots = function(str) {
     let bmi = ((weight)/(height**2));
     return bmi <= 18.5 ? "Underweight" : bmi <=25.0 ? "Normal" : bmi <=30.0 ? "Overweight" : "Obese"
   }
+
+  //Beginner Series #1 School Paperwork
+  function paperwork(n, m) {
+    if((n > 0) && (m > 0)){
+      return n*m
+    }else{
+      return 0
+    }
+  }
