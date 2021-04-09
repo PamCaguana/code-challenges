@@ -22,6 +22,13 @@ var replaceDots = function(str) {
     return Math.floor(average)
   }
 
+  function getAverage(marks){
+    let arr = [];
+    let sum = marks.reduce((a,b) => a + b, 0)
+    let average = sum/ marks.length
+    return Math.floor(average)
+  }
+
   //Calculate BMI
   function bmi(weight, height) {
     let bmi = ((weight)/(height**2));
