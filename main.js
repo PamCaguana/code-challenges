@@ -4,51 +4,56 @@ var replaceDots = function(str) {
   }
 
 //Difference of Volumes of Cuboids
-  function findDifference(a, b) {
-    let sum1 = a.reduce((a,b) => a * b)
-    let sum2 = b.reduce((a,b) => a * b)
+function findDifference(a, b) {
+  let sum1 = a.reduce((a,b) => a * b)
+  let sum2 = b.reduce((a,b) => a * b)
     return Math.abs(sum1-sum2)
   }
 
-  //My head is at the wrong end!
-  function fixTheMeerkat(arr) {
-    return arr.reverse()
-   }
-
-   //Get the mean of an array
-   function getAverage(marks){
-    let sum = marks.reduce((a,b) => a + b,0)
-    let average = sum/marks.length
-    return Math.floor(average)
+//My head is at the wrong end!
+function fixTheMeerkat(arr) {
+  return arr.reverse()
   }
 
-  function getAverage(marks){
-    let arr = [];
-    let sum = marks.reduce((a,b) => a + b, 0)
-    let average = sum/ marks.length
-    return Math.floor(average)
-  }
+//Get the mean of an array
+function getAverage(marks){
+  let sum = marks.reduce((a,b) => a + b,0)
+  let average = sum/marks.length
+  return Math.floor(average)
+}
 
-  //Calculate BMI
-  function bmi(weight, height) {
-    let bmi = ((weight)/(height**2));
-    return bmi <= 18.5 ? "Underweight" : bmi <=25.0 ? "Normal" : bmi <=30.0 ? "Overweight" : "Obese"
-  }
+function getAverage(marks){
+  let arr = [];
+  let sum = marks.reduce((a,b) => a + b, 0)
+  let average = sum/ marks.length
+  return Math.floor(average)
+}
 
-  //Beginner Series #1 School Paperwork
-  function paperwork(n, m) {
-    if((n > 0) && (m > 0)){
-      return n*m
-    }else{
-      return 0
-    }
-  }
+//Calculate BMI
+function bmi(weight, height) {
+  let bmi = ((weight)/(height**2));
+  return bmi <= 18.5 ? "Underweight" : bmi <=25.0 ? "Normal" : bmi <=30.0 ? "Overweight" : "Obese"
+}
 
-  //Do I get a bonus?
-  function bonusTime(salary, bonus) {
-    if(bonus === true) {
-      return "£"+ (salary*10)
-    }else{
-      return "£" + salary
-    }
+//Beginner Series #1 School Paperwork
+function paperwork(n, m) {
+  if((n > 0) && (m > 0)){
+    return n*m
+  }else{
+    return 0
   }
+}
+
+//Do I get a bonus?
+function bonusTime(salary, bonus) {
+  if(bonus === true) {
+    return "£"+ (salary*10)
+  }else{
+    return "£" + salary
+  }
+}
+
+//MakeUpperCase
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
