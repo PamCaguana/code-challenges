@@ -115,3 +115,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function zeroFuel(distanceToPump, mpg, fuelLeft) {
   return (distanceToPump > mpg * fuelLeft) ? false : true;
 }
+
+//Returning Strings
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
