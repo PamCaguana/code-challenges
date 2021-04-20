@@ -1,3 +1,7 @@
+//Name of Challenge
+//My solution
+//Best practices solution when available
+
 //FIXME: Replace all dots
 var replaceDots = function(str) {
     return str.replace(/[.]/g, '-');
