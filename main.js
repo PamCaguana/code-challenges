@@ -130,3 +130,16 @@ function removeChar(str){
  function removeChar(str) {
   return str.slice(1, -1);
 }
+
+//Do you speak "English"?
+function spEng(sentence){
+  if(sentence.search(/english/i) === -1){
+    return false
+  }else {
+    return true
+  }
+}
+
+function spEng(s){
+  return /english/i.test(s)
+}
