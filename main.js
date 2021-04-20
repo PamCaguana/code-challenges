@@ -153,3 +153,16 @@ function repeatStr (n, s) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld)
 }
+
+//Abbreviate a Two Word Name
+function abbrevName(name){
+  let arr = name.split(" ",2)
+  let first = arr[0][0].toUpperCase()
+  let last = arr[1][0].toUpperCase()
+  return first + '.' + last
+}
+
+function abbrevName(name){
+  var nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
