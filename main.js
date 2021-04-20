@@ -148,3 +148,8 @@ function spEng(s){
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+//Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}
