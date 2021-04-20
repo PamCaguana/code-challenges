@@ -143,3 +143,8 @@ function spEng(sentence){
 function spEng(s){
   return /english/i.test(s)
 }
+
+//String repeat
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
