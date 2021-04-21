@@ -180,3 +180,15 @@ function find_average(array) {
   var sum = array.reduce((a, b) => a + b, 0);
   return sum/array.length;
 }
+
+//pick a set of first elements
+function first(arr, n) {
+  if(n>0){
+   return arr.slice(0,n)
+  }else if(n == 0){
+   return []
+  }else{
+   return arr.slice(0,1)
+  }
+ }
+
