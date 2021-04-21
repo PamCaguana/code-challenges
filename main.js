@@ -209,3 +209,13 @@ function hoopCount (n) {
 function apple(x){
   return (Math.pow(x, 2) < 1000) ? "Help yourself to a honeycomb Yorkie for the glovebox." : "It's hotter than the sun!!"
 }
+
+//Will there be enough space?
+function enough(cap, on, wait) {
+  let diff = Math.abs((cap - on)-wait)
+  return ((on + wait) < cap) ? 0 : diff
+}
+
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0)
+}
