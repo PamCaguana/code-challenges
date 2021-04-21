@@ -204,3 +204,8 @@ function hoopCount (n) {
 function hoopCount (n) {
   return (n < 10) ? 'Keep at it until you get it' : 'Great, now move on to tricks';
 }
+
+//Alan Partridge II - Apple Turnover
+function apple(x){
+  return (Math.pow(x, 2) < 1000) ? "Help yourself to a honeycomb Yorkie for the glovebox." : "It's hotter than the sun!!"
+}
