@@ -242,3 +242,8 @@ const peopleWithAgeDrink = (age) =>
   var TempleStrings = function(obj, feature) {
     return `${obj} are ${feature}`;
   }
+
+  //The Wide-Mouthed frog! 
+  function mouthSize(animal) {
+    return animal.toLowerCase() === "alligator" ? "small" : "wide"
+  }
