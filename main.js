@@ -247,3 +247,12 @@ const peopleWithAgeDrink = (age) =>
   function mouthSize(animal) {
     return animal.toLowerCase() === "alligator" ? "small" : "wide"
   }
+
+  //Remove String Spaces
+  function noSpace(x){
+    return x.replace(/[" "]/g, "")
+  }
+
+  function noSpace(x){
+    return x.replace(/\s/g, '');
+  }
