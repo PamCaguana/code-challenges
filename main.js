@@ -256,3 +256,11 @@ const peopleWithAgeDrink = (age) =>
   function noSpace(x){
     return x.replace(/\s/g, '');
   }
+
+  //Convert boolean values to strings 'Yes' or 'No'.
+  function boolToWord( bool ){
+    return bool === true ? "Yes" : "No"
+  }
+  function boolToWord( bool ){
+    return bool ? 'Yes':'No';
+  }
