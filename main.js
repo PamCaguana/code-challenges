@@ -269,3 +269,11 @@ const peopleWithAgeDrink = (age) =>
   function howManyLightsabersDoYouOwn(name) {
     return name === 'Zach' ? 18 : 0
   }
+
+  //Remove exclamation marks
+  function removeExclamationMarks(s) {
+    return s.replace(/!/gi, '')
+  }
+  function removeExclamationMarks(s) {
+    return s.split('!').join('')
+  }
