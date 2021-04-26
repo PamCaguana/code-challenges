@@ -264,3 +264,8 @@ const peopleWithAgeDrink = (age) =>
   function boolToWord( bool ){
     return bool ? 'Yes':'No';
   }
+
+  //How many lightsabers do you own?
+  function howManyLightsabersDoYouOwn(name) {
+    return name === 'Zach' ? 18 : 0
+  }
