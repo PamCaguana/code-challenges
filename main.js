@@ -287,3 +287,12 @@ const peopleWithAgeDrink = (age) =>
   function stringToArray(string){
     return string.split(' ')
   }
+
+  //Convert a Number to a String!
+  function numberToString(num) {
+    return String(num)
+  }
+
+  function numberToString(num) {
+    return num.toString()
+  }
