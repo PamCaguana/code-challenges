@@ -282,3 +282,8 @@ const peopleWithAgeDrink = (age) =>
   function greet (name, owner) {
     return name === owner ? 'Hello boss' : 'Hello guest'
   }
+
+  //Convert a string to an array
+  function stringToArray(string){
+    return string.split(' ')
+  }
