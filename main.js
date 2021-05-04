@@ -305,3 +305,8 @@ const peopleWithAgeDrink = (age) =>
       return false
     }
   }
+
+  //Reversed Words
+  function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+  }
