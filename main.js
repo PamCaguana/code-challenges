@@ -310,3 +310,76 @@ const peopleWithAgeDrink = (age) =>
   function reverseWords(str){
     return str.split(' ').reverse().join(' ');
   }
+
+  //Count of positives / sum of negatives
+  function countPositivesSumNegatives(input) {
+    if (input == null || input.length == 0){
+      return []
+    } else{
+      let sum = 0
+      let count = 0
+      input.forEach((x) => x > 0 ? count++ : sum +=x)
+      return [count,sum]
+    }
+  }
+
+  //I love you, a little , a lot, passionately ... not at all
+  function howMuchILoveYou(nbPetals) {
+    let phrases = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
+    return phrases[(nbPetals - 1) % 6]
+  }
+
+  //Find numbers which are divisible by given number
+  function divisibleBy(numbers, divisor){
+    let arr = []
+    for (i = 0; i<numbers.length; i++){
+      if (numbers[i] % divisor === 0){
+        arr.push(numbers[i])
+      }
+    }
+    return arr
+  }
+  function divisibleBy(numbers, divisor) {
+    return numbers.filter(n => n % divisor === 0)
+  }
+
+  //Fake Binary
+  function fakeBin(x){
+    return x.split('').map(x => x<5 ? '0':'1').join('')
+  }
+
+  //Sum Mixed Array
+  function sumMix(x){
+    return Number(x.reduce((a, b) => Number(a) + Number(b)))
+  }
+
+  //Sort and Star
+  function twoSort(s) {
+    let sorted = s.sort()
+    return sorted[0].split('').join('***')
+  }
+
+  //JavaScript Array Filter
+  function getEvenNumbers(numbersArray){
+    function numFilter(n) {
+      return n % 2 === 0 ? true : false
+    }
+      return numbersArray.filter(numFilter)
+  }
+
+  //Convert number to reversed array of digits
+  function digitize(n) {
+    return String(n).split('').reverse().map(Number)
+  }
+
+  //Filter out the geese
+  function gooseFilter (birds) {
+    let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+    let filtered =  birds.filter(el => !geese.includes(el))
+    return filtered
+  }
+
+  //Swap Values
+  function swapValues(arr) {
+    return arr.reverse()
+}
