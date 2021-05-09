@@ -383,3 +383,23 @@ const peopleWithAgeDrink = (age) =>
   function swapValues(arr) {
     return arr.reverse()
 }
+
+//A wolf in sheep's clothing
+function warnTheSheep(queue) {
+  if (queue[queue.length -1] === "wolf"){
+    return "Pls go away and stop eating my sheep"
+  } else{
+    return `Oi! Sheep number ${queue.reverse().indexOf("wolf")}! You are about to be eaten by a wolf!`
+  }
+}
+
+//Sum of positive
+function positiveSum(arr) {
+  let total = 0
+    for(i=0; i < arr.length; i++){
+      if(arr[i] >= 0){
+        total +=arr[i]
+      }
+    }
+  return total
+  }
