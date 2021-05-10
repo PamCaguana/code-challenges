@@ -403,3 +403,30 @@ function positiveSum(arr) {
     }
   return total
   }
+
+  //Find the Difference in Age between Oldest and Youngest Family Members
+  function differenceInAges(ages){
+    ages.sort((a, b) => a - b)
+    let first = ages.shift()
+    let last = ages.pop()
+    let diff = last - first
+    return [first, last, diff]
+}
+
+function differenceInAges (ages) {
+
+  let max = Math.max(...ages),
+      min = Math.min(...ages)
+      diff = max - min
+      
+  return [min, max, diff]
+}
+
+//Sum Arrays
+function sum (numbers) {
+  return numbers.length === 0 ? 0 : numbers.reduce((a, b) => a + b)
+}
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
