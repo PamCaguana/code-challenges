@@ -430,3 +430,8 @@ function sum (numbers) {
 function sum(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
+
+//You only need one - Beginner
+function check(a, x) {
+  return a.includes(x)
+}
