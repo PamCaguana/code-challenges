@@ -446,3 +446,9 @@ function uefaEuro2016 (teams, scores) {
     return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
   }
 }
+
+//Sum The Strings
+function sumStr(a,b) {
+  let sum = Number(a) + Number(b)
+  return sum.toString()
+}
