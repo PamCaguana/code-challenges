@@ -470,3 +470,10 @@ function lovefunc(flower1, flower2){
 function litres(time) {
   return Math.floor(time * 0.5)
 }
+
+//Miles per gallon to kilometers per liter
+function converter (mpg) {
+  let ratio = 1.609344/4.54609188
+  let kmg = mpg * ratio
+  return Number(kmg.toFixed(2))
+}
