@@ -489,3 +489,28 @@ function correctTail(body, tail){
     return false
     }
   }
+
+  //You Can't Code Under Pressure #1
+  function doubleInteger(i) {
+    return i*2
+  }
+
+  //Find the smallest integer in the array
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      args.sort((a, b) => a - b)
+      let smallest = args.shift()
+      return smallest
+    }
+  }
+
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args)
+    }
+  }
+
+  //Area or Perimeter
+  const areaOrPerimeter = function(l , w) {
+    return l===w ? l * w : 2*l + 2*w
+  }
