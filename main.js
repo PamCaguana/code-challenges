@@ -514,3 +514,36 @@ function correctTail(body, tail){
   const areaOrPerimeter = function(l , w) {
     return l===w ? l * w : 2*l + 2*w
   }
+
+  //Grasshopper - Variable Assignment Debug
+  var a = "dev"
+  var b = "Lab"
+
+  var name = a + b
+
+  //Function 3 - multiplying two numbers
+  function multiply(a, b){
+    return a*b
+  }
+
+  //Century From Year
+  function century(year) {
+    return Math.ceil(year/100)
+  }
+
+  //Beginner - Lost Without a Map
+  function maps(x){
+    for(i=0; i < x.length; i++){
+      return x.map(n => n*2)
+    }
+  }
+
+  //Beginner - Reduce but Grow
+  function grow(x){
+    return x.reduce((a, b) => a * b)
+  }
+
+  //Function 1 - hello world
+  function greet(){
+    return "hello world!"
+  }
