@@ -561,3 +561,19 @@ function correctTail(body, tail){
      }
       return longest
   }
+
+  //Can we divide it?
+  function isDivideBy(number, a, b) {
+    return number % a === 0  && number % b === 0
+  }
+
+  //Find Maximum and Minimum Values of a List
+  var min = function(list){
+    
+    return Math.min(...list)
+}
+
+var max = function(list){
+    
+    return Math.max(...list)
+}
