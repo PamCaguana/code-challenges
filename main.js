@@ -609,3 +609,11 @@ function generateRange(min, max, step){
 function mango(quantity, price){
   return (quantity - Math.floor(quantity/3)) * price
 }
+
+//Powers of 2
+function powersOfTwo(n){
+  let arr = []
+  for (let i = 0; i <= n; i++){
+    arr.push(Math.pow(2,i))
+  } return arr
+}
