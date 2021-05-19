@@ -588,3 +588,11 @@ function rentalCarCost(d) {
     return d*40
   }
 }
+
+//Lario and Muigi Pipe Problem
+function pipeFix(numbers){
+  let arr = []
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++){
+    arr.push(i)
+  }return arr
+}
