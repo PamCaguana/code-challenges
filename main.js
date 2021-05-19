@@ -636,3 +636,15 @@ function getRealFloor(n) {
     return n
   }
 }
+
+//Multiplication table for number
+function multiTable(number) {
+  return `1 * ${number} = ${1 * number}\n2 * ${number} = ${2 * number}\n3 * ${number} = ${3 * number}\n4 * ${number} = ${4 * number}\n5 * ${number} = ${5 * number}\n6 * ${number} = ${6 * number}\n7 * ${number} = ${7 * number}\n8 * ${number} = ${8 * number}\n9 * ${number} = ${9 * number}\n10 * ${number} = ${10 * number}`}
+
+function multiTable(number) {
+  let table = '';
+  for(let i = 1; i <= 10; i++){
+    table += `${i} * ${number} = ${i*number}\n`
+  }
+  return table.slice(0, -1)
+}
