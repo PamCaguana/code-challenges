@@ -617,3 +617,11 @@ function powersOfTwo(n){
     arr.push(Math.pow(2,i))
   } return arr
 }
+
+//Pre-FizzBuzz Workout #1
+function preFizz(n) {
+  let arr = []
+  for(let i=1; i <= n; i++){
+    arr.push(i)
+  }return arr
+}
