@@ -683,3 +683,8 @@ const reverseSeq = n => {
       arr.push(i)
       } return arr
   }
+
+  //Convert a Boolean to a String
+  function booleanToString(b){
+    return b.toString()
+  }
