@@ -701,3 +701,8 @@ const reverseSeq = n => {
   function makeNegative(num) {
     return num >= 0 ? num * -1 : num
   }
+
+  //Grasshopper - Terminal game move function
+  function move (position, roll) {
+    return position + roll*2
+  }
