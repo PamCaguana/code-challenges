@@ -706,3 +706,8 @@ const reverseSeq = n => {
   function move (position, roll) {
     return position + roll*2
   }
+
+  //Reversed Strings
+  function solution(str){
+    return str.split('').reverse().join('')
+  }
