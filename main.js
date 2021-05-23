@@ -688,3 +688,11 @@ const reverseSeq = n => {
   function booleanToString(b){
     return b.toString()
   }
+
+  //Beginner Series #4 Cockroach
+  function cockroachSpeed(s) {
+    let cmps = 27.7778
+    return Math.floor(s*cmps)
+  }
+
+  const cockroachSpeed = s => Math.floor(s / 0.036)
