@@ -696,3 +696,8 @@ const reverseSeq = n => {
   }
 
   const cockroachSpeed = s => Math.floor(s / 0.036)
+
+  //Return Negative
+  function makeNegative(num) {
+    return num >= 0 ? num * -1 : num
+  }
