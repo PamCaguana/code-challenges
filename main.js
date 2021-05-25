@@ -721,3 +721,16 @@ const reverseSeq = n => {
       }
     }return arr.join('')
   }
+
+  //Is he gonna survive?
+  function hero(bullets, dragons){
+    if(dragons * 2 <= bullets){
+      return true
+    }else{
+      return false
+    }
+  }
+
+  function hero(bullets, dragons){
+    return bullets >= dragons * 2
+  }
