@@ -734,3 +734,22 @@ const reverseSeq = n => {
   function hero(bullets, dragons){
     return bullets >= dragons * 2
   }
+
+  //Super Duper Easy
+  function problem(x){
+    return x===String(x) ? "Error" : (x*50) + 6
+  }
+  //Are arrow functions odd?
+  function odds(values){
+    return values.filter(x => x % 2)
+  }
+  //Grasshopper - Basic Function Fixer
+  function addFive(num) {
+    var total = num + 5
+    return total
+  }
+  //USD => CNY
+  function usdcny(usd) {
+    let yuan = usd * 6.75
+    return `${yuan.toFixed(2)} Chinese Yuan`
+  }
