@@ -753,3 +753,18 @@ const reverseSeq = n => {
     let yuan = usd * 6.75
     return `${yuan.toFixed(2)} Chinese Yuan`
   }
+
+  //Odd or Even?
+  function oddOrEven(array) {
+    if(array.length === 0){
+      return "even"
+    }else if(array.reduce((a,b) => a+b) % 2 === 0){
+       return "even"
+     }else{
+       return "odd"
+     }
+  }
+
+  function oddOrEven(arr) {
+    return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+  }
