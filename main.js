@@ -768,3 +768,12 @@ const reverseSeq = n => {
   function oddOrEven(arr) {
     return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
   }
+
+  //Small enough? - Beginner
+  function smallEnough(a, limit){
+    return !a.some(x => x > limit)
+  }
+
+  function smallEnough(a, limit){
+    return Math.max(...a) <= limit
+  }
