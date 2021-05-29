@@ -801,3 +801,15 @@ const reverseSeq = n => {
       return sum
     })
   }
+
+  //Looking for a benefactor
+  function newAvg(arr, newavg) {
+    let avg = (arr.reduce((a, b) => a+b, 0)/ arr.length)
+    if(arr.length === 0){
+      return newavg
+    }else if(avg < newavg){
+      return Math.ceil(((newavg - avg) * arr.length) + newavg)
+    }else{
+      return ERROR
+    }
+  }
