@@ -777,3 +777,13 @@ const reverseSeq = n => {
   function smallEnough(a, limit){
     return Math.max(...a) <= limit
   }
+
+  //Find the next perfect square!
+  function findNextSquare(sq) {
+    let root = Math.sqrt(sq)
+    if(root === Math.floor(root)){
+      return Math.pow(root + 1, 2)
+    }else{
+    return -1;
+    }
+  }
