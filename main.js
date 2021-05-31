@@ -813,3 +813,9 @@ const reverseSeq = n => {
       return ERROR
     }
   }
+
+  //Basic Math (Add or Subtract)
+  function calculate(str) {
+    let total = str.replace(/plus/g, '+').replace(/minus/g, '-')
+    return String(eval(total))
+  }
