@@ -819,3 +819,15 @@ const reverseSeq = n => {
     let total = str.replace(/plus/g, '+').replace(/minus/g, '-')
     return String(eval(total))
   }
+
+  //Highest and Lowest
+  function highAndLow(numbers){
+    let num = numbers.split(' ').sort((a,b) => a - b)
+    let highAndLow = [num[num.length-1], num[0]]
+    return highAndLow.join(' ')
+  }
+
+  function highAndLow(numbers){
+    numbers = numbers.split(' ')
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+  }
