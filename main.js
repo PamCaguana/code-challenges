@@ -831,3 +831,39 @@ const reverseSeq = n => {
     numbers = numbers.split(' ')
     return `${Math.max(...numbers)} ${Math.min(...numbers)}`
   }
+
+  //Factorial
+  function factorial(n){
+    let total = 1
+    for (let i= 1; i <= n; i++){
+      total *= i
+    }
+    return total
+  }
+
+  function factorial(n){
+    return n < 2 ? 1 : n * factorial(n - 1)
+  }
+
+  //Sort Numbers
+  function solution(nums){
+    if (nums === null || nums.length === 0){
+      return []
+    }else{
+      return nums.sort((a, b) => a - b)
+    }
+  }
+
+  //Disemvowel Trolls
+  function disemvowel(str) {
+    return str.replace(/a|e|i|o|u/gi, '')
+  }
+
+  function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '')
+  }
+
+  //Substituting Variables Into Strings: Padded Numbers
+  function solution(value){
+    return `Value is ${("00000"+value).slice(-5)}`
+  }
