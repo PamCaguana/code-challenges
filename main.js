@@ -867,3 +867,41 @@ const reverseSeq = n => {
   function solution(value){
     return `Value is ${("00000"+value).slice(-5)}`
   }
+
+  //Growth of a Population
+  function nbYear(p0, percent, aug, p) {
+    let i = 0
+    while (true){
+      if (p0 >= p){
+        return i
+      }
+      p0 = p0 * (1 + percent/100) + aug
+      i++
+    }
+}
+
+//Binary Addition
+function addBinary(a,b) {
+  let sum = a + b
+  return sum.toString(2)
+}
+
+//Sort arrays - 1
+// input: names - unsorted array
+// output: sorted array
+sortme = function( names ){
+  return names.sort()
+}
+
+//Isograms
+function isIsogram(str){
+  str = str.toLowerCase()
+  for(let i = 0; i < str.length; i++){
+    for(let j = i + 1; j < str.length; j++){
+      if(str[i]===str[j]){
+        return false
+      }
+    }
+  }
+  return true
+}
