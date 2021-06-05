@@ -925,3 +925,28 @@ function digitize(n) {
 function digitize(n) {
   return n.toString().split('').map(Number)
 }
+
+//Get the Middle Character
+function getMiddle(s){
+  let x = s.split('')
+  if(x.length % 2 === 0){
+    return x.slice(((x.length/2)-1),((x.length/2)+1)).join('')
+  }else{
+    return x[Math.floor(x.length/2)]
+  }
+}
+
+//Square Every Digit
+function squareDigits(num){
+  let nums = num.toString().split('')
+  return Number(nums.map(x => x**2).join(''))
+}
+
+//You're a square!
+var isSquare = function(n){
+  return Math.sqrt(n) === Math.floor(Math.sqrt(n))
+}
+
+function isSquare(n) {
+  return Math.sqrt(n) % 1 === 0
+}
