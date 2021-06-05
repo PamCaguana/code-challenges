@@ -910,3 +910,18 @@ function isIsogram(str){
 function switcheroo(x){
   return x.replace(/[ab]/g, x => x == 'a' ? 'b': 'a')
 }
+
+//Filter Long Words
+function filterLongWords(sentence, n) {
+  return sentence.split(' ').filter(word => word.length > n)
+}
+
+//Digitize
+function digitize(n) {
+  let str = String(n)
+  return str.split('').map(Number)
+}
+
+function digitize(n) {
+  return n.toString().split('').map(Number)
+}
