@@ -950,3 +950,18 @@ var isSquare = function(n){
 function isSquare(n) {
   return Math.sqrt(n) % 1 === 0
 }
+
+//List Filtering
+function filter_list(l) {
+  let arr = []
+  for(let i=0; i < l.length;i++){
+    if (Number.isInteger(l[i])){
+      arr.push(l[i])
+    }
+  }
+  return arr
+}
+
+function filter_list(l) {
+  return l.filter(function(v) {return typeof v == 'number'})
+}
