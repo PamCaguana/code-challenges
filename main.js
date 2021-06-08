@@ -965,3 +965,9 @@ function filter_list(l) {
 function filter_list(l) {
   return l.filter(function(v) {return typeof v == 'number'})
 }
+
+//Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {  
+  let nums = numbers.sort((a,b) => a-b)
+  return nums[0] + nums[1]
+}
