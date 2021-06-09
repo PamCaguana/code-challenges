@@ -998,3 +998,9 @@ function descendingOrder(n){
 function descendingOrder(n){
   return parseInt([...String(n)].sort().reverse().join(''))
 }
+
+//Shortest Word
+function findShort(s){
+  let words = s.split(' ').sort((a, b)=> a.length - b.length)
+  return words[0].length
+}
