@@ -1004,3 +1004,10 @@ function findShort(s){
   let words = s.split(' ').sort((a, b)=> a.length - b.length)
   return words[0].length
 }
+
+//Exes and Ohs
+function XO(str) {
+  let xs = (str.match(/[x]/ig)||[]).length
+  let os = (str.match(/[o]/ig)||[]).length
+  return xs === os
+ }
