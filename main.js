@@ -986,3 +986,15 @@ function getCount(str) {
 function getCount(str) {
   return (str.match(/[aeiou]/ig)||[]).length
 }
+
+//Descending Order
+function descendingOrder(n){
+  let nums = n.toString().split('')
+  return Number(nums.sort((a,b) => b - a).join(''))
+}
+function descendingOrder(n){
+  return parseInt(String(n).split('').sort().reverse().join(''))
+}
+function descendingOrder(n){
+  return parseInt([...String(n)].sort().reverse().join(''))
+}
