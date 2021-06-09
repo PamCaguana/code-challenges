@@ -1011,3 +1011,9 @@ function XO(str) {
   let os = (str.match(/[o]/ig)||[]).length
   return xs === os
  }
+
+ //Complementary DNA
+ function DNAStrand(dna){
+  let bases = {'A':'T', 'T':'A', 'C':'G', 'G':'C'}
+  return dna.replace(/[ATCG]/g, x=> bases[x])
+}
