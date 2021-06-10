@@ -1027,3 +1027,8 @@ const binaryArrayToNumber = arr => {
 function solution(str, ending){
   return str.endsWith(ending)
 }
+
+//No oddities here
+function noOdds(values){
+  return values.filter(x => x % 2 == 0)
+}
