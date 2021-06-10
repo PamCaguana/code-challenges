@@ -1017,3 +1017,8 @@ function XO(str) {
   let bases = {'A':'T', 'T':'A', 'C':'G', 'G':'C'}
   return dna.replace(/[ATCG]/g, x=> bases[x])
 }
+
+//Ones and Zeros
+const binaryArrayToNumber = arr => {
+  return parseInt(arr.join(''), 2)
+}
