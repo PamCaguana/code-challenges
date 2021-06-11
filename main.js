@@ -1032,3 +1032,12 @@ function solution(str, ending){
 function noOdds(values){
   return values.filter(x => x % 2 == 0)
 }
+
+//Regex validate PIN code
+function validatePIN (pin) {
+  return /^(\d{4}|\d{6})$/.test(pin)
+}
+//^ ==> the beginning of a string or line
+//() ==> groups multiple tokens together and creates a capture groupe for extracting a substring or using a backreference
+//\d ==> matches any digit
+//{4} and {6} ==> a quantifier (matches 4 or 6 of the previous token. \d in this case)
