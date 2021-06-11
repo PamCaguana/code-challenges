@@ -1041,3 +1041,20 @@ function validatePIN (pin) {
 //() ==> groups multiple tokens together and creates a capture groupe for extracting a substring or using a backreference
 //\d ==> matches any digit
 //{4} and {6} ==> a quantifier (matches 4 or 6 of the previous token. \d in this case)
+
+//Beginner Series #3 Sum of Numbers
+function getSum( a,b ){
+  let min = Math.min(a,b),
+      max = Math.max(a,b),
+     total = 0
+  while (min <= max){
+    total += min++
+  }
+  return a == b ? a : total
+}
+
+const GetSum = (a, b) => {
+  let min = Math.min(a, b),
+      max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
+}
