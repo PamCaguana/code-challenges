@@ -1063,3 +1063,8 @@ const GetSum = (a, b) => {
 function minMax(arr){
   return [Math.min(...arr), Math.max(...arr)]
 }
+
+//Sort array by string length
+function sortByLength (array) {
+  return array.sort((a,b) => a.length - b.length)
+}
