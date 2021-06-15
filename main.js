@@ -1068,3 +1068,8 @@ function minMax(arr){
 function sortByLength (array) {
   return array.sort((a,b) => a.length - b.length)
 }
+
+//Two to One
+function longest(s1, s2) {
+  return [...new Set(s1 + s2)].sort().join('')
+}
