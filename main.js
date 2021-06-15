@@ -1073,3 +1073,12 @@ function sortByLength (array) {
 function longest(s1, s2) {
   return [...new Set(s1 + s2)].sort().join('')
 }
+
+//Sum of a sequence
+const sequenceSum = (begin, end, step) => {
+  let total = 0
+  for(let i = begin;i <= end;i += step){
+    total += i
+  }
+  return total
+}
