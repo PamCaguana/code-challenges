@@ -1082,3 +1082,13 @@ const sequenceSum = (begin, end, step) => {
   }
   return total
 }
+
+//Two Oldest Ages
+function twoOldestAges(ages){
+  let sortAge = ages.sort((a,b) => a - b)
+  return [sortAge[sortAge.length-2], sortAge[sortAge.length-1]]
+}
+
+function twoOldestAges(ages){
+  return ages.sort((a,b) => a-b).slice(-2)
+}
