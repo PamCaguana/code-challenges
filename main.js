@@ -1102,3 +1102,8 @@ function findSum(n) {
     }
   }return total
 }
+
+//Anagram Detection
+var isAnagram = function(test, original) {
+  return test.toLowerCase().split('').sort().join('') == original.toLowerCase().split('').sort().join('')
+}
