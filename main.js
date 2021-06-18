@@ -1107,3 +1107,8 @@ function findSum(n) {
 var isAnagram = function(test, original) {
   return test.toLowerCase().split('').sort().join('') == original.toLowerCase().split('').sort().join('')
 }
+
+//Average Scores
+function average(scores) {
+  return Math.round((scores.reduce((a,b) => a + b))/scores.length)
+}
