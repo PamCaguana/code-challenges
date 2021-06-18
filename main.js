@@ -1112,3 +1112,14 @@ var isAnagram = function(test, original) {
 function average(scores) {
   return Math.round((scores.reduce((a,b) => a + b))/scores.length)
 }
+
+//Find the vowels
+function vowelIndices(word){
+  let split = word.split('')
+  let vowels = []
+  for (let i = 0; i<word.length; i++){
+    if(/[aeiouy]/ig.test(split[i])){
+      vowels.push(i+1)
+    }
+  }return vowels
+}
