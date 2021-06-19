@@ -1123,3 +1123,12 @@ function vowelIndices(word){
     }
   }return vowels
 }
+
+//Remove anchor from URL
+function removeUrlAnchor(url){
+  return url.replace(/#.*/,'')
+}
+
+function removeUrlAnchor(url){
+  return url.split('#')[0];
+}
