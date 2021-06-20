@@ -1132,3 +1132,10 @@ function removeUrlAnchor(url){
 function removeUrlAnchor(url){
   return url.split('#')[0];
 }
+
+//Functional Addition
+function add(n) {
+  return function (x){
+    return x + n
+  }
+}
