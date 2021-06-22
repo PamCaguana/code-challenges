@@ -1139,3 +1139,17 @@ function add(n) {
     return x + n
   }
 }
+
+//Find the middle element
+var gimme = function (inputArray) {
+  const sortArray = inputArray.slice().sort((a,b) => a - b)
+  for (i in sortArray) {
+    if (inputArray[i] === sortArray[1]) {
+      return inputArray.indexOf(sortArray[1])
+    }
+  }
+}
+
+function gimme(a) {
+  return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
+}
