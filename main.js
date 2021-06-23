@@ -1153,3 +1153,8 @@ var gimme = function (inputArray) {
 function gimme(a) {
   return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
 }
+
+//Leap Years
+function isLeapYear(year) {
+  return (year % 4 == 0 && year % 100 !== 0) || year % 400 == 0
+}
