@@ -1182,3 +1182,12 @@ function correctPolishLetters (string) {
   }
   return string.split('').map(x => diaNorm[x] ? diaNorm[x] : x).join('')
 }
+
+//Degine a card suit
+function defineSuit(card) {
+  return {'♣' : 'clubs',
+         '♦' : 'diamonds',
+         '♥' :  'hearts',
+         '♠' :  'spades'
+  }[card.substr(-1)]
+}
