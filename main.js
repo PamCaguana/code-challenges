@@ -1158,3 +1158,11 @@ function gimme(a) {
 function isLeapYear(year) {
   return (year % 4 == 0 && year % 100 !== 0) || year % 400 == 0
 }
+
+//Holiday VI - Shark Pontoon
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if(dolphin){ //flag
+    sharkSpeed *= 0.5
+  }
+ return (pontoonDistance/youSpeed >= sharkDistance/sharkSpeed) ? 'Shark Bait!' : 'Alive!'
+}
