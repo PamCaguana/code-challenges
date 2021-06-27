@@ -1218,3 +1218,46 @@ function aliasGen(first, last){
     return 'Your name must start with a letter from A - Z.'
   }
 }
+
+//Jenny's secret message
+function greet(name){
+  if(name === "Johnny"){
+    return "Hello, my love!"
+  }else{
+   return "Hello, " + name + "!"
+  }
+}
+
+//Invert values
+function invert(array) {
+  return array.map(x => -x)
+}
+
+//A Needle in the Haystack
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf('needle')}`
+}
+
+//Convert a String to a Number!
+var stringToNumber = function(str){
+  return Number(str)
+}
+
+//Is n divisible by x and y?
+function isDivisible(n, x, y) {
+  return n % x == 0 && n % y == 0
+}
+
+//Grasshopper - Summation
+var summation = function (num) {
+  let sum = 0
+  for(let i=1; i <= num; i++){
+    sum += i
+  }
+  return sum
+}
+
+//Opposite number
+function opposite(number) {
+  return number * -1
+}
