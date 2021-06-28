@@ -1266,3 +1266,9 @@ function opposite(number) {
 function smash (words) {
   return words.join(' ')
 }
+
+//How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+  let avg = (classPoints.reduce((a,b) => a+b) + yourPoints)/(classPoints.length + 1)
+  return yourPoints > avg
+}
