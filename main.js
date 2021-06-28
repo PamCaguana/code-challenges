@@ -1261,3 +1261,8 @@ var summation = function (num) {
 function opposite(number) {
   return number * -1
 }
+
+//Sentence Smash
+function smash (words) {
+  return words.join(' ')
+}
