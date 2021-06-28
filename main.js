@@ -1272,3 +1272,8 @@ function betterThanAverage(classPoints, yourPoints) {
   let avg = (classPoints.reduce((a,b) => a+b) + yourPoints)/(classPoints.length + 1)
   return yourPoints > avg
 }
+
+//Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+  return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
+}
