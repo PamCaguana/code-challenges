@@ -1302,3 +1302,15 @@ function createArray(number){
 function otherAngle(a, b) {
   return 180 - a - b
 }
+
+//Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+//Grasshopper - Messi Goals
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
