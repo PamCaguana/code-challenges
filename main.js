@@ -1336,3 +1336,12 @@ function sayHello(name) {
 var a = "code"
 var b = "wa.rs"
 var name = a + b
+
+//Grasshopper - If/else syntax debug
+function checkAlive (health) {
+  if (health > 0) {
+    return true
+  } else {
+    return false
+  }
+}
