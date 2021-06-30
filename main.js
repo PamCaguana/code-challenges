@@ -1373,3 +1373,12 @@ String.prototype.toAlternatingCase = function () {
 String.prototype.isUpperCase = function() {
   return this == this.toUpperCase()
 }
+
+//Short Long Short
+function solution(a, b){
+  if(a.length > b.length){
+    return b.concat(a,b)
+  }else{
+    return a.concat(b,a)
+  }
+}
