@@ -1331,3 +1331,8 @@ function setAlarm(employed, vacation){
 function sayHello(name) {
   return 'Hello,' + ' ' + name
 }
+
+//Basic variable assignment
+var a = "code"
+var b = "wa.rs"
+var name = a + b
