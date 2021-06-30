@@ -1326,3 +1326,8 @@ class Kata {
 function setAlarm(employed, vacation){
   return employed === true && vacation === false
 }
+
+//Grasshopper - Debug sayHello
+function sayHello(name) {
+  return 'Hello,' + ' ' + name
+}
