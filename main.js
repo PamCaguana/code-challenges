@@ -1355,3 +1355,16 @@ function testEven(n) {
 function getAge(inputString){
   return parseInt(inputString[0])
 }
+
+//altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function () {
+  let splitPhrase = this.split('')
+  let newPhrase = []
+  for(let i=0; i<splitPhrase.length;i++){
+    if(splitPhrase[i] === splitPhrase[i].toUpperCase()){
+      newPhrase.push(splitPhrase[i].toLowerCase())
+    }else{
+      newPhrase.push(splitPhrase[i].toUpperCase())
+    }
+  } return newPhrase.join('')
+}
