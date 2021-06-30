@@ -1350,3 +1350,8 @@ function checkAlive (health) {
 function testEven(n) {
   return n % 2 == 0
 }
+
+//Parse nice int from char problem
+function getAge(inputString){
+  return parseInt(inputString[0])
+}
