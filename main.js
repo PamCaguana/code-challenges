@@ -1368,3 +1368,8 @@ String.prototype.toAlternatingCase = function () {
     }
   } return newPhrase.join('')
 }
+
+//Is the string uppercase?
+String.prototype.isUpperCase = function() {
+  return this == this.toUpperCase()
+}
