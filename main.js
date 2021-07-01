@@ -1382,3 +1382,11 @@ function solution(a, b){
     return a.concat(b,a)
   }
 }
+
+//Exclusive "or" (xor) Logical Operator
+function xor(a, b) {
+  return (a && !b) || (!a && b)
+}
+function xor(a, b) {
+  return a != b;
+}
