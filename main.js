@@ -1390,3 +1390,8 @@ function xor(a, b) {
 function xor(a, b) {
   return a != b;
 }
+
+//Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+  return base % factor === 0
+}
