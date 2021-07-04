@@ -1395,3 +1395,10 @@ function xor(a, b) {
 function checkForFactor (base, factor) {
   return base % factor === 0
 }
+
+//Sleigh Authentication
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  return name =="Santa Claus" && password =="Ho Ho Ho!"
+}
