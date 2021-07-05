@@ -1402,3 +1402,8 @@ function Sleigh() {}
 Sleigh.prototype.authenticate = function(name, password) {
   return name =="Santa Claus" && password =="Ho Ho Ho!"
 }
+
+//Bin to Decimal
+function binToDec(bin){
+  return parseInt(bin, 2)
+}
