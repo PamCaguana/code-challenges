@@ -1407,3 +1407,8 @@ Sleigh.prototype.authenticate = function(name, password) {
 function binToDec(bin){
   return parseInt(bin, 2)
 }
+
+//get character from ASCII Value
+function getChar(c){
+  return String.fromCharCode(c)
+}
