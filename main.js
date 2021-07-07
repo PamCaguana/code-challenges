@@ -1426,3 +1426,8 @@ function convertToCelsius (temperature) {
   var celsius = (temperature - 32) * (5/9)
   return celsius
 }
+
+//Reverse List Order
+function reverseList(list) {
+  return list.reverse()
+}
