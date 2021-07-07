@@ -1458,3 +1458,23 @@ function basicOp(operation, value1, value2) {
           return 0;
   }
 }
+
+//Count by X
+function countBy(x, n) {
+  let z = []
+  let max = x*n
+  for(let i=1; i <= max; i++){
+    if(i % x === 0){
+      z.push(i)
+      }
+  }
+  return z
+}
+
+function countBy(x, n) {
+  var z = [];
+  for (i = 1; i <= n; i++) {
+      z.push(x * i);
+  }
+  return z;
+}
