@@ -1478,3 +1478,17 @@ function countBy(x, n) {
   }
   return z;
 }
+
+//Double Char
+function doubleChar(str) {
+  let newStr = ''
+  for(let i=0; i <= str.length; i++){
+    newStr += str.charAt(i) + str.charAt(i)
+    }return newStr
+  }
+
+  const doubleChar = (str) => str.split("").map(c => c + c).join("")
+
+  function doubleChar(str) {
+    return str.replace(/(.)/g, "$1$1")
+  }
