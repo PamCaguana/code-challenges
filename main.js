@@ -161,6 +161,14 @@ function maskify(cc) {
   return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 }
 
+//regex solutions
+function maskify(cc) {
+  return cc.replace(/.(?=....)/g, '#');
+}
+function maskify(cc) {
+  return cc.replace(/.(?=.{4})/g, "#");
+}
+
 function spEng(s){
   return /english/i.test(s)
 }
