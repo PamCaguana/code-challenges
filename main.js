@@ -144,6 +144,23 @@ function spEng(sentence){
   }
 }
 
+//Credit Card Mask
+function maskify(cc) {
+  if(cc.length <= 4){
+   return cc
+    }
+  else{
+    let lastFour = cc.slice(-4)
+    let newCC = cc.split('').map(x => x ='#')
+    let firstNums = newCC.splice(-4)
+    return newCC.concat(lastFour).join('')
+    }
+}
+
+function maskify(cc) {
+  return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+}
+
 function spEng(s){
   return /english/i.test(s)
 }
@@ -1493,7 +1510,7 @@ function doubleChar(str) {
     return str.replace(/(.)/g, "$1$1")
   }
 
-  //f you can't sleep, just count sheep!!
+  //If you can't sleep, just count sheep!!
   const countSheep = function (num){
     let sheepString =''
     for (let i = 1; i <= num; i++){
