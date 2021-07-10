@@ -1492,3 +1492,11 @@ function doubleChar(str) {
   function doubleChar(str) {
     return str.replace(/(.)/g, "$1$1")
   }
+
+  //f you can't sleep, just count sheep!!
+  const countSheep = function (num){
+    let sheepString =''
+    for (let i = 1; i <= num; i++){
+      sheepString += `${i} sheep...`
+    }return sheepString
+  }
