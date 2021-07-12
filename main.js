@@ -1525,3 +1525,17 @@ function doubleChar(str) {
       sheepString += `${i} sheep...`
     }return sheepString
   }
+
+  //Hello, Name or World!
+  function hello(name) {
+    if(name == null || name.length < 1){
+      return 'Hello, World!'
+      }
+    else{
+      let regName = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase()
+      return `Hello, ${regName}!`
+    }
+  }
+
+  const hello = s =>
+  `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`
