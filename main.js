@@ -1565,3 +1565,20 @@ function doubleChar(str) {
        return 'Nine'
    }
  }
+
+ //Credit Card Mask
+ function maskify(cc) {
+  if(cc.length <= 4){
+   return cc
+    }
+  else{
+    let lastFour = cc.slice(-4)
+    let newCC = cc.split('').map(x => x ='#')
+    let firstNums = newCC.splice(-4)
+    return newCC.concat(lastFour).join('')
+    }
+}
+
+function maskify(cc) {
+  return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+}
