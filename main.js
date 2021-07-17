@@ -1616,3 +1616,12 @@ function solution(number){
   }
   return sum
 }
+
+//NBA full 48 minutes average
+function pointsPer48(ppg, mpg) {
+  return ppg*mpg === 0 ? 0 : Number(((ppg*48)/mpg).toFixed(1))
+}
+
+function pointsPer48(ppg, mpg) {
+  return +(ppg/mpg*48).toFixed(1)||0
+}
