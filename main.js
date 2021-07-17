@@ -1625,3 +1625,8 @@ function pointsPer48(ppg, mpg) {
 function pointsPer48(ppg, mpg) {
   return +(ppg/mpg*48).toFixed(1)||0
 }
+
+//Holiday VIII - Duty Free
+function dutyFree(normPrice, discount, hol){
+  return Math.floor(hol/(normPrice * (discount/100)))
+}
