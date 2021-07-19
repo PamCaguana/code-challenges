@@ -1630,3 +1630,8 @@ function pointsPer48(ppg, mpg) {
 function dutyFree(normPrice, discount, hol){
   return Math.floor(hol/(normPrice * (discount/100)))
 }
+
+//Plural
+function plural(n) {
+  return n !== 1
+}
