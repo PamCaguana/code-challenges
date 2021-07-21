@@ -1640,3 +1640,12 @@ function plural(n) {
 function replace(s){
   return s.replace(/[aeiou]/ig, '!')
 }
+
+//Hex to Decimal
+function hexToDec(hexString){
+  return parseInt(hexString, 16)
+}
+//NUMBER TO HEX
+function decToHex(string){
+  return string.toString(16)
+}
