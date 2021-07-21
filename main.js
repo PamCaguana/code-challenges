@@ -1649,3 +1649,12 @@ function hexToDec(hexString){
 function decToHex(string){
   return string.toString(16)
 }
+
+//Regexp Basics - is it a digit?
+String.prototype.digit = function() {
+  return /\d/.test(this) === true && this.length === 1
+}
+
+String.prototype.digit = function() {
+  return /^\d$/.test(this)
+}
