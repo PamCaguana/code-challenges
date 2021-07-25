@@ -1714,3 +1714,8 @@ function friend(friends){
 function friend(friends){
   return friends.filter(n => n.length === 4)
 }
+
+//Is this a triangle?
+function isTriangle(a,b,c){
+  return a + b > c && a + c > b && b + c > a
+}
