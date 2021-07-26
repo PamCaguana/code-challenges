@@ -1719,3 +1719,11 @@ function friend(friends){
 function isTriangle(a,b,c){
   return a + b > c && a + c > b && b + c > a
 }
+
+//Flatten and sort an array
+const flattenAndSort = (array) => array.reduce((acc, cur) => acc.concat(cur), []).sort((a, b) => a - b)
+
+"use strict";
+function flattenAndSort(array) {
+  return [].concat(...array).sort((a,b) => a - b);
+}
