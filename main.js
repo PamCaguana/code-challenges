@@ -1745,3 +1745,12 @@ function isSortedAndHow(array) {
   return arr.every((x,i)=>i==0||arr[i]>=arr[i-1])?'yes, ascending':
          arr.every((x,i)=>i==0||arr[i]<=arr[i-1])?'yes, descending':'no'
 }
+
+//Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map(x => x[0].toUpperCase() + x.slice(1)).join(' ')
+}
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
+}
