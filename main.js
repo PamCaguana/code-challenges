@@ -1754,3 +1754,11 @@ String.prototype.toJadenCase = function () {
 String.prototype.toJadenCase = function () {
   return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
 }
+
+//Number of People in the Bus
+var number = function(busStops){
+  return busStops.map(x => x[0] - x[1]).reduce((a,b) => a + b)
+}
+
+const number = busStops => busStops.reduce((p,n) => p+n[0]-n[1],0)
+const number = busStops => busStops.reduce((rem, [on, off]) => rem + on - off, 0)
