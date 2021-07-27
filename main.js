@@ -1727,3 +1727,21 @@ const flattenAndSort = (array) => array.reduce((acc, cur) => acc.concat(cur), []
 function flattenAndSort(array) {
   return [].concat(...array).sort((a,b) => a - b);
 }
+
+//Sorted? yes? no? how?
+function isSortedAndHow(array) {
+  let ascending = [...array].sort((a,b) => a - b)
+  let descending = [...ascending].reverse()
+  if(array.join('') == ascending.join('')){
+    return 'yes, ascending'
+  }else if(array.join('') == descending.join('')){
+    return 'yes, descending'
+  }else{
+    return 'no'
+   }
+ }
+
+ function isSortedAndHow(arr) {
+  return arr.every((x,i)=>i==0||arr[i]>=arr[i-1])?'yes, ascending':
+         arr.every((x,i)=>i==0||arr[i]<=arr[i-1])?'yes, descending':'no'
+}
