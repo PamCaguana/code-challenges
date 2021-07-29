@@ -1783,6 +1783,9 @@ function squareSum(numbers){
   }, 0)
 }
 function squareSum(numbers){
+  return numbers.reduce((sum,num) => sum + (num * num), 0)
+}
+function squareSum(numbers){
   return numbers.map(square).reduce(sum)
 }
 function square(number) {
