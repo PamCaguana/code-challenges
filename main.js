@@ -1772,3 +1772,19 @@ function divisors(integer) {
     }
   }return arr.length > 1 ? arr : `${integer} is prime`
 }
+
+//Square(n) Sum
+function squareSum(numbers){
+  return numbers.map(x => x**2).reduce((a,b) => a + b, 0)
+}
+function squareSum(numbers){
+  return numbers.reduce(function(sum, n){
+    return (n*n) + sum
+  }, 0)
+}
+function squareSum(numbers){
+  return numbers.map(square).reduce(sum)
+}
+function square(number) {
+  return number * number
+}
