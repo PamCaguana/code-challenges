@@ -1791,3 +1791,17 @@ function squareSum(numbers){
 function square(number) {
   return number * number
 }
+
+//Sum without highest and lowest number
+function sumArray(array) {
+  if(array === null || array.length <= 1){
+    return 0
+  }else{
+    let sortedArr = array.sort((a,b) => a - b)
+    let total = 0
+    for(let i=1; i < sortedArr.length-1; i++){
+      total += sortedArr[i]
+      }
+    return total
+  }
+}
