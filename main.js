@@ -1805,3 +1805,11 @@ function sumArray(array) {
     return total
   }
 }
+
+//Removing Elements
+function removeEveryOther(arr){
+  return arr.filter(function(num, index){
+    if(index % 2 === 0)
+      return num
+  })
+}
