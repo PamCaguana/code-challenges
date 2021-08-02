@@ -1818,3 +1818,8 @@ function removeEveryOther(arr){
 function capitalizeWord(word) {
   return word[0].toUpperCase() + word.slice(1)
 }
+
+//To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+  return array.map(x => Number.isInteger(Math.sqrt(x)) ? Math.sqrt(x) : x**2)
+}
