@@ -1849,3 +1849,9 @@ function likes(names) {
     default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
   }
 }
+
+//Bit Counting
+var countBits = function(n) {
+  let binArr = n.toString(2)
+  return binArr.split('').map(Number).reduce((a,b) => a + b)
+}
