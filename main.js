@@ -1855,3 +1855,4 @@ var countBits = function(n) {
   let binArr = n.toString(2)
   return binArr.split('').map(Number).reduce((a,b) => a + b)
 }
+countBits = n => n.toString(2).split('0').join('').length
