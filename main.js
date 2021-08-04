@@ -1856,3 +1856,10 @@ var countBits = function(n) {
   return binArr.split('').map(Number).reduce((a,b) => a + b)
 }
 countBits = n => n.toString(2).split('0').join('').length
+
+//Convert to Binary
+function toBinary(n){
+  return Number(n.toString(2))
+}
+
+let toBinary = n => +n.toString(2)
