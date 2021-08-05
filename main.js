@@ -1863,3 +1863,8 @@ function toBinary(n){
 }
 
 let toBinary = n => +n.toString(2)
+
+//Sort the Gift Code
+function sortGiftCode(code){
+  return code.split('').sort().join('')
+}
