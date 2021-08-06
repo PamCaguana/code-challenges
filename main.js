@@ -1868,3 +1868,16 @@ let toBinary = n => +n.toString(2)
 function sortGiftCode(code){
   return code.split('').sort().join('')
 }
+
+//Create Phone Number
+function createPhoneNumber(numbers){
+  numbers = numbers.join('')
+  return `(${numbers.slice(0,3)}) ${numbers.slice(3,6)}-${numbers.slice(6)}`
+}
+function createPhoneNumber(numbers){
+  let format = "(xxx) xxx-xxxx"
+  for(let i = 0; i < numbers.length; i++){
+    format = format.replace('x', numbers[i])
+  }
+  return format
+}
