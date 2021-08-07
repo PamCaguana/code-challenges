@@ -1886,3 +1886,8 @@ function createPhoneNumber(numbers){
 function nameShuffler(str){
   return str.split(' ').reverse().join(' ')
 }
+
+//Formatting decimal places #0
+function twoDecimalPlaces(n) {
+  return +n.toFixed(2)
+}
